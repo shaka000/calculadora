@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #101728;
+    color: whitesmoke;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --cor-numerico: #151E34;
+    --cor-simbolos: #2D3F6B;
+    --cor-resultado: #3A589F;
+    --cor-hover: #204395;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+.pagina {
+    display: flex;
+    align-items: center;
+    padding: 2% 5%;
+}
+
+.lado_esquerdo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    text-align: center;
+    gap: 2rem;
+}
+
+.lado_esquerdo_titulo {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.lado_esquerdo_paragrafo {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.lado_esquerdo_ancora {
+    border: 2px solid var(--cor-simbolos);
+    border-radius: 30px;
+    background-color: var(--cor-numerico);
+    width: 290px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
+.lado_esquerdo_ancora:hover {
+    background-color: var(--cor-simbolos);
+}
+
+.lado_direito {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    text-align: center;
+}
+
+.lado_direito_calculadora {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.lado_direito_calculadora_linha {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+
+.linha_resultado {
+    border: 2px solid var(--cor-resultado);
+    border-radius: 30px;
+    background-color: var(--cor-resultado);
+    width: 486px;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    font-size: 2rem; 
+}
+
+.linha {
+    border: 2px solid var(--cor-numerico);
+    border-radius: 30px;
+    background-color: var(--cor-numerico);
+    width: 90px;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+.linha_nonumber {
+    border: 2px solid var(--cor-simbolos);
+    border-radius: 30px;
+    background-color: var(--cor-simbolos);
+    width: 90px;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+.linha_igual {
+    border: 2px solid var(--cor-simbolos);
+    border-radius: 30px;
+    background-color: var(--cor-simbolos);
+    width: 90px;
+    height: 180px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+.linha:hover {
+    background-color: var(--cor-hover);
+}
+
+.linha_nonumber:hover {
+    background-color: var(--cor-hover);
+}

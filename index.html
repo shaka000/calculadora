@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Simples</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="pagina">
+        <section class="lado_esquerdo">
+            <h1 class="lado_esquerdo_titulo">CALCULADORA<br>SIMPLES ONLINE</h1>
+            <p class="lado_esquerdo_paragrafo">Projeto para portifólio.<br><br>Design e Script feito por mim</p>
+            <a class="lado_esquerdo_ancora" href="#">GitHub</a>
+            <a class="lado_esquerdo_ancora" href="#">Portifólio</a>
+        </section>
+
+        <section class="lado_direito">
+            <div class="lado_direito_calculadora">
+                <div class="lado_direito_calculadora_resultado">
+                    <h5 id="resultado" class="linha_resultado"></h5>
+                </div>
+
+                <div class="lado_direito_calculadora_linha">
+                    <button type="button" onclick="limparResultado()" id="limpar" class="linha_nonumber">CE</button>
+                    <button type="button" onclick="mostrarNaTela('7')" id="numberSete" class="linha">7</button>
+                    <button type="button" onclick="mostrarNaTela('8')" id="numberOito" class="linha">8</button>
+                    <button type="button" onclick="mostrarNaTela('9')" id="numberNove" class="linha">9</button>
+                    <button type="button" onclick="mostrarNaTela('÷')" id="dividir" value="/" class="linha_nonumber" disabled>÷</button>
+                </div>
+
+                <div class="lado_direito_calculadora_linha">
+                    <button type="button" onclick="limparNumero()" id="deletar" class="linha_nonumber">Del</button>
+                    <button type="button" onclick="mostrarNaTela('4')" id="numberQuatro" class="linha">4</button>
+                    <button type="button" onclick="mostrarNaTela('5')" id="numberCinco" class="linha">5</button>
+                    <button type="button" onclick="mostrarNaTela('6')" id="numberSeis" class="linha">6</button>
+                    <button type="button" onclick="mostrarNaTela('×')" id="multiplicar" class="linha_nonumber" disabled>×</button>
+                </div>
+
+                <div class="lado_direito_calculadora_linha">
+                    <button type="button" onclick="mostrarNaTela('R')" id="RestanteDivisao" class="linha_nonumber" disabled>R</button>
+                    <button type="button" onclick="mostrarNaTela('1')" id="numberUm" class="linha">1</button>
+                    <button type="button" onclick="mostrarNaTela('2')" id="numberDois" class="linha">2</button>
+                    <button type="button" onclick="mostrarNaTela('3')" id="numberTres" class="linha">3</button>
+                    <button type="button" onclick="mostrarNaTela('-')" id="subtrair" class="linha_nonumber" disabled>-</button>
+                </div>
+
+                <div class="lado_direito_calculadora_linha">
+                    <button type="button" onclick="resultadoDaConta()" id="igual" class="linha_nonumber">=</button>
+                    <button type="button" onclick="mostrarNaTela('0')" id="numeberZero" class="linha">0</button>
+                    <button type="button" onclick="mostrarNaTela('00')" id="zeroZero" class="linha">00</button>
+                    <button type="button" onclick="mostrarNaTela(',')" id="virgula" class="linha" disabled>,</button>
+                    <button type="button" onclick="mostrarNaTela('+')" id="soma" class="linha_nonumber" disabled>+</button>
+                </div>
+            </div>
+        </section>
+        <script src="script.js" defer></script>
+    </main>
+</body>
+</html>
