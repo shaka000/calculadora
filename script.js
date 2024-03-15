@@ -31,10 +31,12 @@ function limparNumero(){
 function resultadoDaConta(){
     var numero = document.getElementById('resultado').innerHTML
     var conta = numero.replace(/÷/g, '/');
-    conta = conta.replace(/×/g, '*')
-    conta = conta.replace(/R/g, '%')
-    conta = conta.replace(/,/g, '.')
-    console.log(conta)
-    console.log(eval(conta))
-    document.getElementById('resultado').innerHTML = eval(conta)
+    conta = conta.replace(/×/g, '*');
+    conta = conta.replace(/R/g, '%');
+    conta = conta.replace(/,/g, '.');
+    if(conta) {
+        document.getElementById('resultado').innerHTML = eval(conta)
+    } else {
+        document.getElementById('resultado').innerHTML = "Algo está errado."
+    }
 }
